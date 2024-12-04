@@ -54,7 +54,7 @@ long double define_integral(void){
 }
 
 long double compute_error(long double true_value, long double estimated_value){
-    return std::fabs(1.0 - true_value/estimated_value)*100;
+    return std::fabs(1.0 - true_value/estimated_value);
 }
 
 long double trapezoid_estimation(long double vmin, long double vmax, long n ,fptr fun){
